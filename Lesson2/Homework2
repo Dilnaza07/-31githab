@@ -1,1 +1,27 @@
-
+  float f1=25.60F;
+    float f2=7.4f;
+    
+    double d1=100.4;
+    double d2=98.345;
+    
+    boolean bool1=true;
+    boolean bool2=false;
+    
+    System.out.println(f1);
+    System.out.println(f2);
+    System.out.println(d1);
+    System.out.println(d2);
+    System.out.println(bool1);
+    System.out.println(bool2);
+    
+    char c1 = 'A';
+    char c2 = 0500;
+    char c3 ='\u0975';
+    
+    System.out.println(c1);
+    System.out.println(c2);
+    System.out.println(c3);
+   
+     }
+    
+}
