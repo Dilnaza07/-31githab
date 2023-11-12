@@ -1,1 +1,36 @@
 
+package Lesson3;
+
+public class Test5 {
+    public static void main(String[] args){
+    int a = 3;
+    int b = 50;
+   // a+=10;
+   // b-=2;
+   // a*=2;
+   // b/=2;
+    
+   // b+=1;
+   // ++b;
+    
+   //int c =0;
+   //a=b=c=18;
+       long r=100L;    
+       int t=10;
+       r=t;
+       short s=50;
+       
+       long d=s;
+       
+       float f1=3/14F;
+       double d1=f1;
+       float f2=a;
+       double d2=a;
+       
+       
+    System.out.println(r);
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
