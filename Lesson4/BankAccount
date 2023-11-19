@@ -1,1 +1,38 @@
+package Lesson4;
 
+public class BankAccount {
+    
+    int id;
+    String name;
+    double balance;
+  
+    
+   }
+
+class BankAccountTest{
+    public static void main(String[] args){
+        BankAccount MyAccount = new BankAccount();
+       BankAccount YourAccount = new BankAccount();
+       BankAccount HisAccount = new BankAccount();
+       
+       
+       MyAccount.id=1;
+       MyAccount.name="Zaur";
+       MyAccount.balance=12.12;
+       
+       YourAccount.id=2;
+       YourAccount.name="Make";
+       YourAccount.balance=2.5;
+       
+       HisAccount.id=3;
+       HisAccount.name="Ivan";
+       HisAccount.balance=125.56;
+  
+    
+    System.out.println(MyAccount.id);
+    System.out.println();
+    System.out.println();
+    
+    
+    }
+}
