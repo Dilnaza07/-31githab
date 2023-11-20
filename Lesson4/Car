@@ -1,1 +1,44 @@
+package Lesson4;
 
+public class Car {
+   Car(String cvet, String motor){
+    
+    color=cvet;
+   engine=motor;
+   
+   System.out.println("Цвет машины: "+ color+" мотор машины: "+ engine);
+    
+
+}
+    String color;
+    String engine;
+    
+}
+
+class Cartest{
+public static void main(String[] args){
+    
+
+   Car car1 = new Car("Black", "W6");
+   
+    Car car2 = new Car("White", "E5");
+   
+
+   }
+
+
+} 
+    
+    
+    //Car car2 = new Car();
+   // Car car3;
+    //car1.color = "black";
+   // car1.engine="v8";
+    
+    //System.out.println(car2.engine);
+   // System.out.println(new Car().color);
+ 
+   // System.out.print();
+    //System.out.println("Cvet: " + car1.color);
+   // System.out.print();
+    //System.out.println("Motor: " + car1.engine);
