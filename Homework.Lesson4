@@ -1,1 +1,69 @@
+package Homework.Lesson4;
 
+public class Student {
+int number;
+String name;
+String surname;
+int year;
+float mathematics;
+float economics;
+float English;
+
+float srednyayaocenka(){
+float result = (mathematics + economics + English)/3;
+return result;
+}
+}
+
+class StudentTest{
+    public static void main(String[] args){
+Student stud1 = new Student();
+Student stud2 = new Student();
+Student stud3 = new Student();
+
+stud1.number=1;
+stud1.name="Eva";
+stud1.surname="Rubkova";
+stud1.year=1;
+stud1.English=4;
+stud1.economics=3;
+stud1.mathematics=4;
+
+stud2.number=2;
+stud2.name="Ivan";
+stud2.surname="Karpov";
+stud2.year=3;
+stud2.English=5;
+stud2.economics=4;
+stud2.mathematics=5;
+
+stud3.number=3;
+stud3.name="Ira";
+stud3.surname="Vernichesko";
+stud3.year=2;
+stud3.English=5;
+stud3.economics=5;
+stud3.mathematics=5;
+
+//float Eva = (stud1.English + stud1.economics + stud1.mathematics)/3;
+//float Ivan = (stud2.English + stud2.economics + stud2.mathematics)/3;
+//float Ira = (stud3.English + stud3.economics + stud3.mathematics)/3;
+float a1 = stud1.srednyayaocenka();
+float a2 = stud2.srednyayaocenka();
+float a3 = stud3.srednyayaocenka();
+
+System.out.println("Студент: " + stud1.name + " " +
+stud1.surname);
+System.out.println("Средняя арифметическая оценка " + a1);
+System.out.println();
+System.out.println("Студент: " + stud2.name + " " +
+stud2.surname);
+System.out.println("Средняя арифметическая оценка " + a2);
+System.out.println();
+System.out.println("Студент: " + stud3.name + " " +
+stud3.surname);
+System.out.println("Средняя  арифметическая оценка " + a3);
+
+
+    }
+}
