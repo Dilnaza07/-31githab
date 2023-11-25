@@ -1,0 +1,39 @@
+
+package Lesson5;
+
+public class Car2 {
+    String color = "red";
+    String engine = "v6";
+    int speed;
+    
+    int gaz(int skorost ){
+    speed+=skorost;
+    return speed;
+    }
+    
+    int tormos(int skorost ){
+    speed-=skorost;
+    return speed;
+    }
+    
+    void showinfo(){
+        System.out.println("svet: " + color + " motor: " + engine + " skorost: " + speed);
+    }
+    }
+    
+
+class Car2Test{
+    public static void main(String[] args){
+    Car2 c1 = new Car2();
+    c1.color = "white";
+    c1.engine = "V6";
+    c1.speed = 60;
+    
+    c1.showinfo();
+    c1.gaz(20);
+    c1.showinfo();
+    c1.tormos(80);
+    c1.showinfo();
+    
+    }
+}
