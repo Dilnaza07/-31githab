@@ -1,0 +1,42 @@
+public class BankAccount {
+ 
+    int id;
+    String name;
+    double balance;
+    
+    double popolnenieScheta(int a){
+        double result = balance + a; 
+        return result;  }
+    
+    double snyatieSoScheta(int b){
+        double result = balance - b; 
+        return result;  }
+    }
+
+class BankAccountTest{
+
+public static void main(String[] args){
+
+        BankAccount MyAccount = new BankAccount();
+        BankAccount YourAccount = new BankAccount();
+        BankAccount HisAccount = new BankAccount();
+        
+        MyAccount.id=1;
+        MyAccount.name="Zaur";
+        MyAccount.balance=128.4;
+        
+        YourAccount.id=2;
+        YourAccount.name="Mike";
+        YourAccount.balance=2.4;
+        
+        HisAccount.id=3;
+        HisAccount.name="Ivan";
+        HisAccount.balance=124.56;
+  
+        double p = MyAccount.popolnenieScheta(100);
+        double s = MyAccount.snyatieSoScheta(50);
+     
+    System.out.println("Имя: " + MyAccount.name);
+    System.out.println("Счет: " + MyAccount.balance);
+    System.out.println("Пополнение счета: + " + p);
+    System.out.println("Снятие со счета: - " + s);
