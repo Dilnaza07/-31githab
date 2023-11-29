@@ -1,0 +1,37 @@
+package Homework.lesson5;
+
+public class BankAccount1 {
+    
+    int id = 10;
+    String name = "Petr";
+    double balance = 100;
+    
+    void popolnenieScheta(double summaPopolneniya){
+        System.out.println("Баланс: " + balance);
+        System.out.println("Баланс пополняется на : " + summaPopolneniya);
+        balance += summaPopolneniya;
+        System.out.println("Баланс после пополнения: " + balance);
+        System.out.println();
+          }
+    void snyatieSoScheta(double summaSnyatiya){
+        System.out.println("Баланс: " + balance);
+        System.out.println("Баланс уменьшается на : " + summaSnyatiya);
+        balance -= summaSnyatiya;
+        System.out.println("Баланс после снятия: " + balance);
+        System.out.println();
+          }}
+
+     class BankAccountTest1{
+
+   public static void main(String[] args){
+
+        BankAccount1 MyAccount = new BankAccount1();
+        
+  
+        MyAccount.popolnenieScheta(30.5);
+        MyAccount.snyatieSoScheta(20.5);
+     
+   
+    
+}
+}
