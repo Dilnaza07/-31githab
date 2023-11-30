@@ -1,0 +1,44 @@
+package Homework.lesson5;
+
+public class Employee {
+    int id;
+    String surname;
+    int age;
+    double salary;
+    String departament;
+    
+    double yvelichenie(){
+    double result = salary * 2;
+    return result;}
+    
+}
+
+class EmploeeTest{
+    public static void main(String[] args){
+Employee e = new Employee();
+Employee a = new Employee();
+
+e.id=1;
+e.surname= "Popovich";
+e.age=25;
+e.salary=100;
+e.departament="Logistica";
+
+a.id=1;
+a.surname= "Morosova";
+a.age=20;
+a.salary=250;
+a.departament="Medical";
+
+double e1 = e.yvelichenie();
+double a1 = a.yvelichenie();
+
+System.out.println(e.surname + ":" + " Значение новой зарплаты: " + e1);
+System.out.println(a.surname + ":" + " Значение новой зарплаты: " + a1);
+
+
+
+
+
+    }
+}
