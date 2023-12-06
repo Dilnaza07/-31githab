@@ -1,0 +1,77 @@
+
+package Homework.lesson6;
+
+public class Student {
+    
+    Student(int id2,String name2,String surname2,
+    int course2,float math2,float econ2,float Eng2){
+    id=id2;
+    name=name2;
+    surname=surname2;
+    course=course2;
+    math=math2;
+    econ=econ2;
+    Eng=Eng2;
+    }
+    
+    Student(int id3,String name3,String surname3,int course3){
+    this(id3, name3, surname3, course3, 0, 0, 0);
+    }
+    
+    Student(){}
+
+int id;
+String name;
+String surname;
+int course;
+float math;
+float econ;
+float Eng;
+
+float srednyayaocenka(){
+float result = (math + econ + Eng)/3;
+return result;
+}
+}
+
+class StudentTest{
+    public static void main(String[] args){
+        
+  Student stud1 = new Student(2,"Ivan","Karpov", 2, 5, 4, 3);
+  
+  
+  Student stud2 = new Student(1, "Eva", "Rubkova", 1);
+  stud2.Eng=4;
+  stud2.econ=3;
+  stud2.math=4;
+  
+  
+  Student stud3 = new Student();
+  stud3.id=3;
+  stud3.name="Ira";
+  stud3.surname="Vernichesko";
+  stud3.course=2;
+  stud3.Eng=5;
+  stud3.econ=5;
+  stud3.math=5;
+  
+
+  
+float a1 = stud1.srednyayaocenka();
+float a2 = stud2.srednyayaocenka();
+float a3 = stud3.srednyayaocenka();
+
+System.out.println("Студент: " + stud1.name + " " +
+stud1.surname);
+System.out.println("Средняя арифметическая оценка " + a1);
+System.out.println();
+System.out.println("Студент: " + stud2.name + " " +
+stud2.surname);
+System.out.println("Средняя арифметическая оценка " + a2);
+System.out.println();
+System.out.println("Студент: " + stud3.name + " " +
+stud3.surname);
+System.out.println("Средняя  арифметическая оценка " + a3);
+  
+    }
+}
