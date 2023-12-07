@@ -1,0 +1,40 @@
+
+package Homework.lesson6;
+
+public class SummaChisel {
+    
+    void method (int a, int b) {
+     System.out.println(a+b); }   
+    
+    void method (int a, int b, int c) { 
+    System.out.println(a+b+c);}
+    
+    void method (int a, int b, int c, int d) {
+    System.out.println(a+b+c+d);}
+    
+    void method (int a, int b, int c, int d, int f) {
+    System.out.println(a+b+c+d+f);}
+    
+    void method (int a) {
+    System.out.println(a);}
+    
+    void method () {
+    System.out.println(0+0);}
+        }
+       
+ class SummaChiselTest{
+ public static void main(String[] args){
+     SummaChisel sm = new SummaChisel();
+     
+     sm.method(1, 2, 3, 4, 5);
+     sm.method(1, 2, 3, 4);
+     sm.method(1, 2, 3);
+     sm.method(1, 2);
+     sm.method(3);
+     sm.method();
+ 
+ }
+ 
+ 
+ }      
+   
