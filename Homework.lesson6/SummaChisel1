@@ -1,0 +1,51 @@
+
+package Homework.lesson6;
+
+public class SummaChisel1 {
+    
+    int sum () {
+        int result = 0;
+        System.out.println("Сумма всех чисел: " + result);
+        return result;
+    }
+    
+    int sum (int a) {
+        int result1 = a;
+        System.out.println("Сумма всех чисел: " + result1);
+        return result1;
+    }
+    
+   
+    int sum (int a, int b) {
+        int result2 = a + b;
+        System.out.println("Сумма всех чисел: " + result2);
+        return result2;
+    }
+    
+    int sum (int a, int b, int c) {
+        int result3 = a + b + c;
+        System.out.println("Сумма всех чисел: " + result3);
+        return result3;
+    }
+    
+    int sum (int a, int b, int c, int e) {
+        int result4 = a + b + c + e;
+        System.out.println("Сумма всех чисел: " + result4);
+        return result4;
+    }
+   
+        }
+       
+ class SummaChiselTest1{
+ public static void main(String[] args){
+     SummaChisel1 a = new SummaChisel1();
+     
+     a.sum();
+     a.sum(3);
+     a.sum(3, 5);
+     a.sum(3, 5, 7);
+     a.sum(3, 5, 7, 11);
+ 
+     }
+ }      
+   
