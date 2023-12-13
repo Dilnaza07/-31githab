@@ -1,0 +1,33 @@
+package Homework.Lesson7;
+
+public class Employee {
+    
+    int id;
+    public String surname;
+    int age;
+    private double salary;
+    String departament;
+    
+    public Employee(int id2){
+    id = id2;}
+    
+    Employee(String surname2){
+    surname = surname2;}
+    
+    private Employee(double salary2){
+    salary=salary2;}
+    
+   
+    public void getid () {
+    System.out.println("id = " + id);}
+    
+    public void getsurname () {
+    System.out.println("Surname = " + surname);
+    }
+    
+    public void getsalary () {
+    System.out.println("Salary = " + salary);}
+    
+    
+  
+}
