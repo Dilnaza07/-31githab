@@ -1,0 +1,37 @@
+
+
+package Homework.Lesson7;
+
+public class EmployeeTest {
+    public static void main(String[] args){
+        Employee emp1 = new Employee(5);
+        Employee emp2 = new Employee("Ivanov");
+       // Employee emp3 = new Employee(222.6);
+        
+        System.out.println(emp1.id);
+        System.out.println(emp1.surname);
+     //   System.out.println(emp1.salary);
+        
+        System.out.println(emp2.id);
+        System.out.println(emp2.surname);
+     //   System.out.println(emp2.salary);
+        
+       // System.out.println(emp3.id);
+       // System.out.println(emp3.surname);
+      //  System.out.println(emp3.salary);
+        
+        emp1.getid();
+        emp1.getsurname();
+        emp1.getsalary();
+        
+        emp2.getid();
+        emp2.getsurname();
+        emp2.getsalary();
+        
+        
+        
+    
+ 
+
+    
+}}
