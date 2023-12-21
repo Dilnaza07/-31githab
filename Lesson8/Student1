@@ -1,0 +1,50 @@
+
+package Lesson8;
+
+public class Student1 {
+    String name;
+    int course;
+    static int count;
+    int a;
+
+    
+    public Student1(String name2,int course2) {
+     count++;
+     name=name2;
+     course= course2;
+     System.out.println("Студент № "+count+" создан");
+    }
+    
+    public static void showCount(){
+        System.out.println("Всего создано студентов "+count);
+    }
+    
+    public void showInfo(){
+    System.out.println("Welcome to the Student class!!!");
+    
+    }
+    
+    void abc(){
+    a++;
+    count++;
+    }
+    
+    static void abcd(){
+         Student1 st2 = new Student1("Petr",1);
+    st2.a++;
+    count++;
+    }
+    
+    
+      public static void main(String[] args){
+        abcd();
+        Student1 st3 = new Student1("Ivan",2);
+        st3.abc();
+     
+     }
+}
+class StudentTest1{
+   
+       
+        
+    }
