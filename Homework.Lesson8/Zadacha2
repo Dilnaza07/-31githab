@@ -1,0 +1,49 @@
+
+package Homework.Lesson8;
+
+public class Zadacha2 {
+    
+    final static double pi = 3.14;
+   
+    
+ 
+    public double Ploshad(double radius1){
+    return pi*radius1*radius1;
+    };
+    
+    public static double Dlina(double radius2){
+    return 2*pi*radius2;
+    };
+    
+    public void Info(double radius3){
+     System.out.println("Радиус: "+radius3);
+     System.out.println("Площадь круга: "+Ploshad(radius3));
+     System.out.println("Длинна окружности: "+Dlina(radius3));
+    
+    }
+    
+}
+
+class Zadacha2Test {
+
+ public static void main(String[] args){
+     
+     Zadacha2 Ar = new Zadacha2(){};
+     
+     Ar.Ploshad(5);
+     Zadacha2.Dlina(7.5);
+     Ar.Info(3);
+ 
+    
+
+     
+     
+ 
+ 
+ 
+
+ 
+ }
+
+
+}
